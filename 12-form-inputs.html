@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Form-Inputs</title>
-</head>
-<body>
+  </head>
+  <body>
+    <form method="post" action="account/login">
+      <input type="text" /> <br />
+      <input type="number" /><br />
+      <input type="email" /><br />
+      <input type="password" /><br />
+      <input type="search" /><br />
+      <input type="url" /><br />
+      <input type="tel" /><br />
+      <input type="hidden" /><br />
 
-    <form method="post" action="account/login" >
-        <input type="text"> <br>
-        <input type="number"><br>
-        <input type="email"><br>
-        <input type="password"><br>
-        <input type="search"><br>
-        <input type="url"><br>
-        <input type="tel"><br>
-        <input type="hidden"><br>
-        <input type="color" name="!!"><br>
+      <input type="checkbox" name="user" id="usr" /><label for="usr">
+        Kullanici sozlesmesini okudum </label
+      ><br />
+      <input type="checkbox" /> Satis sozlesmesini okudum <br />
 
-        <input type="button" name="Custom"><br>
-        <input type="submit" name="Save"><br>
-        <input type="reset" name="Reset"><br>
+      <input type="radio" name="gender" id="genderM" checked />
+      <label for="genderM">Erkek</label>
 
-        <input type="button" value="Save">
+      <input type="radio" name="gender" id="genderF" />
+      <label for="genderF">Kadin</label> <br />
+
+      <input type="file" name="avatar" /> <br />
+      <input type="color" name="renk" /> <br />
+      <input type="range" name="salary" /><br />
+      <input type="date" name="dogum" /><br />
+      <input type="time" name="departureTime" /><br />
+      <input type="datetime-local" name="dt" /><br />
+      <input type="month" name="mn" /><br />
+      <input type="week" name="wk" /><br />
+
+      <select name="city">
+        <option value="07" disabled selected>Seciniz</option>
+        <option value="03">Moscow</option>
+        <option value="">London</option></select
+      ><br />
+
+      <select name="country" size="5" multiple>
+        <option value="07" disabled selected>Turkey</option>
+        <option value="03">Russia</option>
+        <option value="">United Kingdom</option></select
+      ><br />
+
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+
+      <input type="button" value="Custom" />
+      <input type="submit" name="Save" />
+      <input type="reset" value="Reset" />
     </form>
-</body>
+  </body>
 </html>
